@@ -1,3 +1,3 @@
 # Survey Form
 
-This is a basic survey form
+This is a basic survey form that uses some core principles of responsive web design.
