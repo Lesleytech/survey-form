@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CIF Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <main id="main" class="shadow">
+        <header class="col-lg-7 col-md-10 col-sm-12 mx-auto my-0 text-center">
+          <h1 id="title">codingIsFun Survey Form</h1>
+          <p id="description" class="text-muted">
+            Please take a few minutes to help us better your experience
+          </p>
+        </header>
+        <form
+          action=""
+          id="survey-form"
+          class="col-lg-7 col-md-10 col-sm-12 m-auto"
+          autocomplete="off"
+        >
+          <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              placeholder="Type in your name"
+              id="name"
+              class="form-control form-input"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input
+              type="email"
+              placeholder="Type in your email"
+              id="email"
+              class="form-control form-input"
+              required
+            />
+            <small class="text-muted"
+              >We will keep your email confidential</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="age" id="number-label">Age</label>
+            <input
+              type="number"
+              placeholder="Type in your age"
+              id="number"
+              min="18"
+              max="60"
+              class="form-control form-input"
+            />
+          </div>
+          <div class="form-group">
+            <p>What option best explains why you study coding?</p>
+            <select
+              name="study-purpose"
+              id="dropdown"
+              class="form-control form-input"
+            >
+              <option selected disabled>Tell us about your aspirations</option>
+              <option value="self development">Self development</option>
+              <option value="starting a business">Starting a business</option>
+              <option value="working for a company"
+                >Working for a company</option
+              >
+              <option value="have better grades at school"
+                >Have better grades at school</option
+              >
+              <option value="i'll rather not say">I'll rather not say</option>
+            </select>
+          </div>
+          <div class="form-group option-div">
+            <p>How effective are the courses in CIF's curriculum</p>
+            <label for="very-effective">
+              <input
+                type="radio"
+                name="how-effective"
+                value="very-effective"
+                id="very-effective"
+              />
+              Very effective
+            </label>
+            <label for="effective">
+              <input
+                type="radio"
+                name="how-effective"
+                value="effective"
+                id="effective"
+              />
+              Effective
+            </label>
+            <label for="average">
+              <input
+                type="radio"
+                name="how-effective"
+                value="average"
+                id="average"
+              />
+              Average
+            </label>
+            <label for="not-effective">
+              <input
+                type="radio"
+                name="how-effective"
+                value="not-effective"
+                id="not-effective"
+              />
+              Not effective
+            </label>
+          </div>
+          <div class="form-group option-div">
+            <p>How satisfied are you after completing this course?</p>
+            <label for="very-satisfied">
+              <input
+                type="radio"
+                name="how-satisfied"
+                value="very-satisfied"
+                id="very-satisfied"
+              />
+              Very satisfied
+            </label>
+            <label for="satisfied">
+              <input
+                type="radio"
+                name="how-satisfied"
+                value="satisfied"
+                id="satisfied"
+              />
+              Satisfied
+            </label>
+            <label for="not-sure">
+              <input
+                type="radio"
+                name="how-satisfied"
+                value="not-sure"
+                id="not-sure"
+              />
+              I'm not sure
+            </label>
+            <label for="not-satisfied">
+              <input
+                type="radio"
+                name="how-satisfied"
+                value="not-satisfied"
+                id="not-satisfied"
+              />
+              Not satisfied
+            </label>
+          </div>
+          <div class="form-group option-div">
+            <p>
+              Which of the following courses will you recommed for CIF's
+              curriculum?
+            </p>
+            <label for="game-development">
+              <input
+                type="checkbox"
+                name="recommended-courses"
+                value="game development"
+                id="game-development"
+              />
+              Game development
+            </label>
+            <label for="artificial-intelligence">
+              <input
+                type="checkbox"
+                name="recommended-courses"
+                value="artificial intelligence"
+                id="artificial-intelligence"
+              />
+              Artificial intelligence
+            </label>
+            <label for="ethical-hacking">
+              <input
+                type="checkbox"
+                name="recommended-courses"
+                value="ethical hacking"
+                id="ethical-hacking"
+              />
+              Ethical hacking
+            </label>
+            <label for="data-science">
+              <input
+                type="checkbox"
+                name="recommended-courses"
+                value="recommended courses"
+                id="data-science"
+              />
+              Data science
+            </label>
+            <label for="search-engine-optimization">
+              <input
+                type="checkbox"
+                value="search engine optimization"
+                id="search-engine-optimization"
+              />
+              Search engine optimization
+            </label>
+            <label for="machine-learning">
+              <input
+                type="checkbox"
+                value="machine learning"
+                id="machine-learning"
+              />
+              Machine learning
+            </label>
+            <label for="ux-design">
+              <input type="checkbox" value="ux design" id="ux-design" />
+              UX design
+            </label>
+            <label for="angular">
+              <input type="checkbox" value="angular" id="angular" />
+              Angular
+            </label>
+            <label for="vue">
+              <input type="checkbox" value="vue" id="vue" />
+              Vue
+            </label>
+            <label for="mern-stack">
+              <input type="checkbox" value="mearn stack" id="mern-stack" />
+              MERN stack
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Is there anything particular which you'll like us to know?</p>
+            <textarea
+              name="comment"
+              id="comment"
+              style="width: 100%;"
+              rows="8"
+              placeholder="Write your comments here..."
+              class="form-input form-control"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button id="submit">Submit</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
